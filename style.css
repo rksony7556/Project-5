@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+/* Navigation */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  box-shadow: 5px 5px 5px brown;
+  position: sticky;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+  top: 0;
+  margin-bottom: 35px;
+  padding: 10px;
+  background: white;
+  height: 100px;
+  z-index: 50;
+}
+.navigation_container {
+  display: flex;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bar_icon {
+  font-size: 50px;
+  margin-left: auto;
+}
+/* hero section */
+
+.hero {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero_image img {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+.logo_container img {
+  border: 5px solid;
+  border-radius: 55px;
+  width: 200px;
+  height: 80px;
+}
+.tag {
+  background-color: #61db3b;
+  padding: 5px 10px;
+  font-size: bold;
+  color: white;
+  align-self: flex-start;
+  font-size: 40px;
+}
+h1 {
+  font-size: 70px;
+  color: rgb(23, 26, 26);
+}
+.Explore_btn {
+  background: #46bdb3;
+  font-size: 25px;
+  color: rgb(179, 52, 35);
+  align-self: flex-start;
+  /* height: 35px; */
+  border: 5px rgb(128, 175, 214);
+  border-radius: 50px;
+}
+button {
+  padding: 0 5px;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  opacity: 0.8s;
+  transition: 0.2s ease-in-out;
+}
+
+/* Features section */
+.features {
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  border: 5px solid rgb(119, 80, 80);
+  border-radius: 50px;
+}
+.feature {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 25px;
+  transition: 0.2s ease-in-out;
+}
+
+.feature img {
+  width: 75px;
+}
+.feature:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: 5px 5px 5px black;
+}
+.divider {
+  border: 2px solid black;
+  margin: 20px 0;
+}
+/* Menu section */
+.menu {
+  display: flex;
+  margin: 50px 0;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+.menu .tag {
+  align-self: center;
+}
+.grid-image {
+  border-radius: 50px;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-image:hover {
+  transform: scale(1.04);
+  transition:.2s ease-in-out;
+}
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "R1 R1 R2 R3"
+    "R1 R1 R2 R5"
+    "R4 R4 R5 R1";
+}
+
+.item1 {
+  grid-area: R1;
+}
+.item1 {
+  grid-area: R2;
+}
+.item1 {
+  grid-area: R3;
+}
+.item1 {
+  grid-area: R4;
+}
+.item1 {
+  grid-area: R5;
+}
+
+@media (max-width: 780px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: flex;
+    justify-content: center;
+  }
+  .hero_content {
+    gap: 10px;
+    padding: 10px;
+  }
+  .hero_content h1 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+.features {
+  flex-direction: column;
+}
+.feature {
+  flex-direction: column;
+}
+.grid {
+  padding: 10px;
+}
+.item1 grid-image {
+  size: 40px;
+}
